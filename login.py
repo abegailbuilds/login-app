@@ -17,7 +17,7 @@ while trials<=5:
     elif (username!=new_username) | (passwrd!=new_passwrd):
         trials+=1
     else:
-        trials=6
+        trials>5
 
 
 
@@ -29,7 +29,7 @@ while trials<=5:
     elif trials<=5:
         print("Username or Password do not match,please try again")
 
-    elif trials==6:
+    elif trials>5:
         print("You have been blocked!!!")
         break
     else:
