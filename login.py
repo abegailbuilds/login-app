@@ -3,7 +3,8 @@
 # A user is given 5 attempts to try and login else user is blocked from accessing
 
 
-username = "Abbiemma"
+print(9/0)
+username = "Abbiema"
 passwrd = "Abby@emma"
 trials = 0
 
@@ -18,26 +19,13 @@ while trials <= 5:
         trials = 0
         print("you are successfully logged in!")
         break  # i brought the logic here from if trials==0
-    elif (username != new_username) | (passwrd != new_passwrd):
+    elif (username != new_username) and (passwrd != new_passwrd):
         trials += 1
-        print("Username or Password do not match,please try again")
-    else:
-
         if trials  > 5:
             print("You have been blocked!!!")  # this logic can be written in line 62
             break
-
-
-
-
-
-
-
-
-
-
-
-
+        else:
+            print("Username or Password do not match,please try again")
 
 
 
